@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribe Suites — Boutique Apartments in Prishtina</title>
+<meta name="description" content="Discover your perfect getaway at Tribe Suites — nine individually designed apartments and suites in the heart of Prishtina, blending elegance and comfort.">
+<meta property="og:title" content="Tribe Suites — Boutique Apartments in Prishtina">
+<meta property="og:description" content="Nine individually designed suites in the heart of Prishtina. Light luxury, thoughtful comfort, book directly on Airbnb.">
+<meta property="og:image" content="https://i0.wp.com/tribesuites.com/wp-content/uploads/2026/01/IMG_1993.webp?fit=1000%2C667&ssl=1">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#211819">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://i0.wp.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,340;0,6..72,440;0,6..72,560;1,6..72,400;1,6..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20 90V45a30 30 0 0 1 60 0v45' fill='none' stroke='%23a52a3d' stroke-width='9'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#211819;
+    --ink-soft:#332726;
+    --stone:#e9e3d4;
+    --card:#f5f1e5;
+    --forest:#8c1f2f;
+    --forest-light:#b34456;
+    --brass:#a52a3d;
+    --brass-light:#cf6070;
+    --cream:#f8f5ec;
+    --text:#241c1c;
+    --line:rgba(165,42,61,0.3);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+  body{margin:0; background:var(--stone); color:var(--text); font-family:'Manrope',sans-serif; font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Newsreader',serif; font-weight:440; margin:0; letter-spacing:-0.01em; color:var(--ink);}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  button{font-family:inherit;}
+  .eyebrow{font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--brass); font-weight:700;}
+  .italic{font-style:italic; font-family:'Newsreader',serif;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 32px;}
+  ::selection{background:var(--brass); color:var(--cream);}
+
+  /* arch signature: every photo frame shares this silhouette */
+  .arch-lg{border-radius:clamp(60px,14vw,180px) clamp(60px,14vw,180px) 10px 10px;}
+  .arch-md{border-radius:60px 60px 8px 8px;}
+  .arch-sm{border-radius:28px 28px 6px 6px;}
+
+  /* ---------- TOPBAR + NAV ---------- */
+  .topbar{background:var(--ink); color:var(--stone); font-size:0.78rem;}
+  .topbar .wrap{display:flex; justify-content:flex-end; gap:22px; padding:8px 32px;}
+  .topbar a{display:flex; align-items:center; gap:6px; opacity:0.85; transition:opacity 0.2s ease;}
+  .topbar a:hover{opacity:1; color:var(--brass-light);}
+  .topbar svg{width:13px; height:13px;}
+
+  header.site-nav{position:sticky; top:0; z-index:100; background:rgba(33,24,25,0.9); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid rgba(207,96,112,0.18);}
+  .nav-inner{max-width:1200px; margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .brand-mark{display:flex; align-items:center; gap:10px;}
+  .brand-mark img{height:34px; width:auto;}
+  .brand-mark .wordmark{font-family:'Newsreader',serif; font-size:1.2rem; color:var(--cream); letter-spacing:0.02em; display:none;}
+  .brand-mark.text-fallback .wordmark{display:inline;}
+  nav.links{display:flex; gap:30px; align-items:center;}
+  nav.links a{color:var(--stone); font-size:0.86rem; letter-spacing:0.02em; transition:color 0.2s ease;}
+  nav.links a:hover, nav.links a:focus-visible{color:var(--brass-light);}
+  nav.links a:focus-visible{outline:1px solid var(--brass-light); outline-offset:4px;}
+  .nav-cta{border:1px solid var(--brass-light) !important; padding:9px 20px !important; border-radius:999px; color:var(--cream) !important;}
+  .nav-cta:hover{background:var(--brass-light); color:var(--ink) !important;}
+  .burger{display:none; background:none; border:none; color:var(--cream); font-size:1.5rem; cursor:pointer;}
+  @media (max-width:860px){
+    nav.links{position:fixed; top:0; right:-100%; height:100vh; width:min(78vw,320px); background:var(--ink); flex-direction:column; justify-content:center; gap:28px; transition:right 0.4s ease; padding:40px;}
+    nav.links.open{right:0;}
+    .burger{display:block;}
+    .topbar .wrap{justify-content:center;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative; padding:64px 0 100px;}
+  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+  .hero h1{font-size:clamp(2.6rem,5.2vw,4.4rem); font-weight:400; line-height:1.06; margin:18px 0 24px;}
+  .hero h1 em{font-style:italic; font-weight:400; color:var(--forest);}
+  .hero p.lede{font-size:1.08rem; max-width:44ch; color:var(--ink-soft); margin-bottom:34px;}
+  .btn-row{display:flex; gap:16px; flex-wrap:wrap;}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:15px 30px; border-radius:999px; font-size:0.86rem; font-weight:600; letter-spacing:0.02em; cursor:pointer; transition:transform 0.25s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease; border:1px solid transparent;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn:focus-visible{outline:2px solid var(--forest); outline-offset:3px;}
+  .btn-primary{background:var(--forest); color:var(--cream);}
+  .btn-primary:hover{background:var(--forest-light);}
+  .btn-outline{border-color:var(--ink); color:var(--ink);}
+  .btn-outline:hover{border-color:var(--forest); color:var(--forest);}
+  .btn-brass{background:var(--brass); color:var(--cream);}
+  .btn-brass:hover{background:var(--brass-light);}
+  .hero-photo{position:relative; aspect-ratio:3/4;}
+  .hero-photo .frame{position:absolute; inset:0; overflow:hidden; background:linear-gradient(180deg,#d8cfb4,#c3b892);}
+  .hero-photo img{width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 0.6s ease;}
+  .hero-photo img.loaded{opacity:1;}
+  .hero-photo .frame::before{content:""; position:absolute; inset:0; background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0) 70%); background-size:200% 100%; animation:shimmer 1.7s infinite; z-index:1;}
+  .hero-photo .frame.loaded::before{display:none;}
+  .hero-badge{position:absolute; left:-18px; bottom:34px; background:var(--card); border:1px solid var(--line); padding:16px 22px; max-width:200px; box-shadow:0 14px 34px rgba(33,24,25,0.14);}
+  .hero-badge .n{font-family:'Newsreader',serif; font-size:1.6rem; color:var(--forest);}
+  .hero-badge .l{font-size:0.72rem; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); margin-top:2px;}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-photo{order:-1; max-width:360px; margin:0 auto;}
+    .hero-badge{left:auto; right:-10px;}
+  }
+  @keyframes shimmer{0%{background-position:200% 0;} 100%{background-position:-200% 0;}}
+
+  /* ---------- SECTION helpers ---------- */
+  section{padding:110px 0;}
+  .section-head{max-width:620px; margin-bottom:56px;}
+  .section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem); font-weight:400; margin-top:12px;}
+  .reveal{opacity:0; transform:translateY(20px); transition:opacity 0.7s ease, transform 0.7s ease;}
+  .reveal.in{opacity:1; transform:none;}
+
+  /* ---------- STORY ---------- */
+  .story{background:var(--card);}
+  .story-grid{display:grid; grid-template-columns:0.9fr 1.1fr; gap:70px; align-items:center;}
+  .story-photo{position:relative; aspect-ratio:4/5; overflow:hidden; background:linear-gradient(180deg,#d8cfb4,#c3b892);}
+  .story-photo img{width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 0.6s ease;}
+  .story-photo img.loaded{opacity:1;}
+  .story-photo::before{content:""; position:absolute; inset:0; background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0) 70%); background-size:200% 100%; animation:shimmer 1.7s infinite; z-index:1;}
+  .story-photo.loaded::before{display:none;}
+  .story p{color:var(--ink-soft); margin-top:16px;}
+  .story p:first-of-type{margin-top:18px;}
+  @media (max-width:900px){.story-grid{grid-template-columns:1fr; gap:44px;} .story-photo{order:-1; max-width:320px; margin:0 auto;}}
+
+  /* ---------- AMENITIES ---------- */
+  .amenities{background:var(--ink); color:var(--cream);}
+  .amenities .section-head h2{color:var(--cream);}
+  .amen-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(207,96,112,0.16); border:1px solid rgba(207,96,112,0.16);}
+  .amen-card{background:var(--ink); padding:40px 30px;}
+  .amen-card svg{width:30px; height:30px; margin-bottom:20px;}
+  .amen-card h3{color:var(--cream); font-size:1.1rem; font-weight:440; margin-bottom:8px;}
+  .amen-card p{color:rgba(248,245,236,0.68); font-size:0.9rem; margin:0;}
+  @media (max-width:760px){.amen-grid{grid-template-columns:1fr;}}
+
+  /* ---------- ROOMS ---------- */
+  .rooms{background:var(--stone);}
+  .good-to-know{display:flex; flex-wrap:wrap; gap:28px; align-items:center; background:var(--card); border:1px solid var(--line); padding:20px 26px; margin-bottom:56px; font-size:0.88rem;}
+  .good-to-know strong{color:var(--forest); font-family:'Newsreader',serif; font-weight:560; font-size:1rem;}
+  .good-to-know span{color:var(--ink-soft);}
+  .floor-label{display:flex; align-items:center; gap:14px; margin:52px 0 24px;}
+  .floor-label:first-of-type{margin-top:0;}
+  .floor-label h3{font-size:1.3rem; font-weight:440;}
+  .floor-label::after{content:""; flex:1; height:1px; background:var(--line);}
+  .room-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:26px;}
+  .room-card{background:var(--card); border:1px solid rgba(33,24,25,0.08); overflow:hidden;}
+  button.room-media{appearance:none; -webkit-appearance:none; border:none; padding:0; margin:0; width:100%; display:block; text-align:left; font:inherit; color:inherit; background:none; cursor:zoom-in; aspect-ratio:4/3; position:relative; overflow:hidden;}
+  button.room-media:focus-visible{outline:2px solid var(--forest); outline-offset:-3px;}
+  button.room-media .fill{position:absolute; inset:0; background:linear-gradient(180deg,#d8cfb4,#c3b892);}
+  button.room-media .fill::before{content:""; position:absolute; inset:0; background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0) 70%); background-size:200% 100%; animation:shimmer 1.6s infinite;}
+  button.room-media.loaded .fill::before{display:none;}
+  button.room-media img{position:relative; z-index:1; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 0.5s ease, transform 0.6s ease;}
+  button.room-media img.loaded{opacity:1;}
+  button.room-media:hover img.loaded, button.room-media:focus-visible img.loaded{transform:scale(1.045);}
+  .room-badges{position:absolute; z-index:2; top:12px; left:12px; display:flex; gap:6px; flex-wrap:wrap;}
+  .badge{background:rgba(33,24,25,0.72); color:var(--cream); font-size:0.68rem; letter-spacing:0.05em; text-transform:uppercase; padding:5px 10px; border-radius:999px;}
+  .badge.brass{background:var(--brass);}
+  .zoom-badge{position:absolute; z-index:2; bottom:12px; right:12px; width:28px; height:28px; border-radius:50%; background:rgba(33,24,25,0.6); display:flex; align-items:center; justify-content:center; opacity:0.7; transition:opacity 0.2s ease;}
+  button.room-media:hover .zoom-badge, button.room-media:focus-visible .zoom-badge{opacity:1;}
+  .zoom-badge svg{width:13px; height:13px;}
+  .room-info{padding:18px 20px 22px;}
+  .room-info .top-row{display:flex; justify-content:space-between; align-items:baseline; gap:10px;}
+  .room-info h3{font-size:1.15rem; font-weight:500;}
+  .room-price{font-family:'Newsreader',serif; font-size:1.15rem; color:var(--forest); white-space:nowrap;}
+  .room-price span{font-family:'Manrope',sans-serif; font-size:0.7rem; color:var(--ink-soft); font-weight:500;}
+  .room-cap{font-size:0.82rem; color:var(--ink-soft); margin-top:4px; display:flex; align-items:center; gap:6px;}
+  .room-cap svg{width:14px; height:14px; flex-shrink:0;}
+  .room-book{display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-size:0.78rem; font-weight:700; letter-spacing:0.03em; text-transform:uppercase; color:var(--brass); border-bottom:1px solid transparent; transition:border-color 0.2s ease;}
+  .room-book:hover, .room-book:focus-visible{border-color:var(--brass);}
+  .room-book:focus-visible{outline:2px solid var(--forest); outline-offset:3px;}
+  .room-book .arrow{transition:transform 0.2s ease; display:inline-block;}
+  .room-book:hover .arrow{transform:translateX(3px);}
+
+  /* ---------- SERVICES ---------- */
+  .services{background:var(--card);}
+  .service-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  .service-card{display:grid; grid-template-rows:auto 1fr;}
+  .service-photo{aspect-ratio:16/10; overflow:hidden; position:relative; background:linear-gradient(180deg,#d8cfb4,#c3b892);}
+  .service-photo img{width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity 0.5s ease;}
+  .service-photo img.loaded{opacity:1;}
+  .service-photo::before{content:""; position:absolute; inset:0; background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,0.6) 50%,rgba(255,255,255,0) 70%); background-size:200% 100%; animation:shimmer 1.6s infinite;}
+  .service-photo.loaded::before{display:none;}
+  .service-body{padding:24px 4px;}
+  .service-body .top-row{display:flex; justify-content:space-between; align-items:baseline;}
+  .service-body h3{font-size:1.4rem; font-weight:440;}
+  .service-price{font-family:'Newsreader',serif; color:var(--forest); font-size:1.2rem;}
+  .service-body ul{list-style:none; margin:16px 0 0; padding:0; display:flex; flex-direction:column; gap:8px;}
+  .service-body li{font-size:0.92rem; color:var(--ink-soft); display:flex; align-items:center; gap:10px;}
+  .service-body li::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--brass); flex-shrink:0;}
+  @media (max-width:760px){.service-grid{grid-template-columns:1fr;}}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--ink);}
+  .gallery .section-head h2{color:var(--cream);}
+  .gallery .section-head p{color:rgba(248,245,236,0.7);}
+  .gallery-grid{columns:4 220px; column-gap:16px;}
+  .gallery-grid button{break-inside:avoid; margin-bottom:16px; width:100%;}
+  button.gal-item{appearance:none; -webkit-appearance:none; border:none; padding:0; cursor:zoom-in; position:relative; overflow:hidden; background:linear-gradient(180deg,#3d2a2a,#332726); display:block;}
+  button.gal-item:focus-visible{outline:2px solid var(--brass-light); outline-offset:-3px;}
+  button.gal-item img{width:100%; height:auto; display:block; opacity:0; transition:opacity 0.5s ease, transform 0.5s ease;}
+  button.gal-item img.loaded{opacity:1;}
+  button.gal-item:hover img.loaded, button.gal-item:focus-visible img.loaded{transform:scale(1.04);}
+  @media (max-width:700px){.gallery-grid{columns:2 160px;}}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{position:fixed; inset:0; z-index:300; background:rgba(20,22,18,0.95); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); display:flex; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:opacity 0.3s ease; padding:70px 18px;}
+  .lightbox.open{opacity:1; visibility:visible;}
+  .lb-stage{max-width:min(90vw,680px); width:100%; text-align:center;}
+  .lb-frame{position:relative; background:radial-gradient(circle at 50% 35%, #362627 0%, #211819 75%); border:1px solid rgba(207,96,112,0.28); padding:5%; display:flex; align-items:center; justify-content:center; min-height:260px;}
+  .lb-frame img{max-width:100%; max-height:56vh; width:auto; height:auto; object-fit:contain; opacity:0; transition:opacity 0.3s ease;}
+  .lb-frame img.loaded{opacity:1;}
+  .lb-caption{margin-top:22px;}
+  .lb-caption .eyebrow{display:block; margin-bottom:6px;}
+  .lb-caption h3{color:var(--cream); font-size:1.35rem; font-weight:440;}
+  .lb-counter{margin-top:6px; color:rgba(248,245,236,0.42); font-size:0.72rem; letter-spacing:0.1em;}
+  .lb-actions{margin-top:20px;}
+  .lb-close, .lb-nav{position:absolute; background:none; border:none; color:var(--cream); cursor:pointer; z-index:3; display:flex; align-items:center; justify-content:center;}
+  .lb-close{top:18px; right:22px; font-size:1.8rem; width:44px; height:44px;}
+  .lb-close:hover, .lb-close:focus-visible{color:var(--brass-light);}
+  .lb-nav{top:50%; transform:translateY(-50%); font-size:2.1rem; width:54px; height:54px;}
+  .lb-nav:hover, .lb-nav:focus-visible{color:var(--brass-light);}
+  .lb-prev{left:4px;}
+  .lb-next{right:4px;}
+  .lb-close:focus-visible, .lb-nav:focus-visible{outline:1px solid var(--brass-light); outline-offset:2px;}
+  @media (max-width:640px){.lb-nav{width:40px; height:40px; font-size:1.6rem;} .lb-frame{padding:7% 5%;}}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--stone);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1.1fr; gap:56px; align-items:start;}
+  .contact-item{display:flex; gap:16px; margin-bottom:26px;}
+  .contact-item .ic{width:38px; height:38px; border-radius:50%; background:var(--card); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; flex-shrink:0;}
+  .contact-item .ic svg{width:16px; height:16px; color:var(--forest);}
+  .contact-item h3{font-size:1.02rem; font-weight:600; font-family:'Manrope',sans-serif;}
+  .contact-item p, .contact-item a{color:var(--ink-soft); font-size:0.92rem; margin:2px 0 0;}
+  .contact-item a:hover{color:var(--forest);}
+  .map-frame{aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line);}
+  .map-frame iframe{width:100%; height:100%; border:0;}
+  @media (max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+
+  footer{background:var(--ink); border-top:1px solid rgba(207,96,112,0.14); padding-top:56px;}
+  .footer-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:40px; padding-bottom:40px;}
+  .footer-brand img{height:32px; margin-bottom:14px;}
+  .footer-brand p{color:rgba(248,245,236,0.6); font-size:0.88rem; max-width:32ch;}
+  .footer-social{display:flex; gap:14px; margin-top:16px;}
+  .footer-social a{width:34px; height:34px; border-radius:50%; border:1px solid rgba(207,96,112,0.3); display:flex; align-items:center; justify-content:center; transition:border-color 0.2s ease;}
+  .footer-social a:hover{border-color:var(--brass-light);}
+  .footer-social svg{width:15px; height:15px; color:var(--cream);}
+  footer h4{color:var(--cream); font-family:'Manrope',sans-serif; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; font-weight:700;}
+  footer ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;}
+  footer li a{color:rgba(248,245,236,0.68); font-size:0.9rem; transition:color 0.2s ease;}
+  footer li a:hover{color:var(--brass-light);}
+  .footer-bottom{border-top:1px solid rgba(207,96,112,0.14); padding:22px 0; text-align:center; color:rgba(248,245,236,0.45); font-size:0.78rem;}
+  @media (max-width:760px){.footer-grid{grid-template-columns:1fr; gap:30px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="https://www.instagram.com/tribesuites_" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg> @tribesuites_</a>
+    <a href="tel:+38349944844"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg> 049 944 844</a>
+  </div>
+</div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand-mark" id="brandMark" aria-label="Tribe Suites home">
+      <img id="logoImg" src="https://i0.wp.com/tribesuites.com/wp-content/uploads/2025/12/whiteresized-e1765899556325.png?resize=135%2C116&ssl=1" alt="Tribe Suites logo">
+      <span class="wordmark">Tribe Suites</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#story">Our Story</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact" class="nav-cta">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Your new favorite stay is here</p>
+        <h1>Welcome to <em>Tribe Suites</em></h1>
+        <p class="lede">Where comfort meets elegance. Nine individually designed suites in the heart of Prishtina — a boutique escape for guests who value comfort, style, and a refined atmosphere.</p>
+        <div class="btn-row">
+          <a href="https://www.airbnb.com/users/profile/1588993031989936870?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+          <a href="#rooms" class="btn btn-outline">View Rooms</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="frame" id="heroFrame">
+          <img id="heroImg" alt="A bright, elegantly furnished suite at Tribe Suites, Prishtina">
+        </div>
+        <div class="hero-badge">
+          <div class="n">9</div>
+          <div class="l">Individually Designed Suites</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="wrap story-grid">
+      <div class="story-photo reveal" id="storyPhoto">
+        <img id="storyImg" alt="Bright interior detail at Tribe Suites, Prishtina">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Tribe Suites Prishtina</p>
+        <h2>Where comfort meets elegance</h2>
+        <p>Welcome to Tribe Suites, your boutique escape in the heart of Prishtina. Designed with a soft touch of elegance and simplicity, our suites offer a calming retreat for guests who value comfort, style, and a refined atmosphere. Every detail is thoughtfully curated to make you feel at home, only better.</p>
+        <p>Whether you're visiting for business, leisure, or a peaceful weekend away, our apartments provide the perfect blend of modern amenities and light-toned luxury. Enjoy bright interiors, inviting textures, and a gentle sense of privacy that lets you fully unwind.</p>
+        <p>With nine individually designed suites, each offering its own character, Tribe Suites delivers an experience that is both personal and relaxing. Settle in, explore the city, and return to a place that feels like your own sanctuary in Prishtina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities" id="amenities">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Apartment Amenities</p>
+        <h2>Our Services</h2>
+      </div>
+      <div class="amen-grid reveal">
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a16 16 0 0 1 22 0M8.5 16.5a10 10 0 0 1 13 0M13 21a4 4 0 0 1 4 0" stroke="#cf6070" stroke-width="1.5" stroke-linecap="round"/><circle cx="15" cy="25" r="1.4" fill="#cf6070"/></svg>
+          <h3>Free Wi-Fi</h3><p>Fast, reliable internet throughout the property.</p>
+        </div>
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="20" height="20" rx="3" stroke="#cf6070" stroke-width="1.5"/><path d="M12 21V9h4.2a3.3 3.3 0 0 1 0 6.6H12" stroke="#cf6070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Parking</h3><p>Secure, convenient parking for all guests.</p>
+        </div>
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 4v22M6 9l18 12M24 9 6 21" stroke="#cf6070" stroke-width="1.5" stroke-linecap="round"/><circle cx="15" cy="15" r="12" stroke="#cf6070" stroke-width="1.5"/></svg>
+          <h3>Air Conditioning</h3><p>Comfortable climate control in every suite.</p>
+        </div>
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="6" width="22" height="15" rx="2" stroke="#cf6070" stroke-width="1.5"/><path d="M11 25h8M15 21v4" stroke="#cf6070" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <h3>Smart TV</h3><p>HD smart televisions with streaming access.</p>
+        </div>
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 13a6 6 0 0 1 12 0v6a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-6Z" stroke="#cf6070" stroke-width="1.5"/><path d="M12 8c0-1.5 1-2 1-3.5M17 8c0-1.5 1-2 1-3.5" stroke="#cf6070" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <h3>Kitchen Equipment</h3><p>Fully equipped kitchenette for easy cooking.</p>
+        </div>
+        <div class="amen-card">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 4c4 5 7 9.2 7 13a7 7 0 1 1-14 0c0-3.8 3-8 7-13Z" stroke="#cf6070" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <h3>Hygiene Essentials</h3><p>Fresh linens, towels, and toiletries provided.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section class="rooms" id="rooms">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">A View of Our Ambiance</p>
+        <h2>Rooms &amp; Suites</h2>
+      </div>
+      <div class="good-to-know reveal">
+        <div><strong>Check-in</strong><br><span>From 14:00</span></div>
+        <div><strong>Check-out</strong><br><span>Until 11:00</span></div>
+        <div style="flex:1; min-width:220px;"><span>Guests receive simple arrival instructions before check-in — arriving late or need something specific? Just let us know.</span></div>
+      </div>
+      <div id="roomsContainer"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Best Pricing</p>
+        <h2>Extra Services</h2>
+        <p style="color:var(--ink-soft); margin-top:14px;">To help you enjoy your stay to the fullest, Tribe Suites provides a selection of extra services tailored to your needs.</p>
+      </div>
+      <div class="service-grid reveal">
+        <div class="service-card">
+          <div class="service-photo arch-md" id="svc1Photo"><img id="svc1Img" alt="Fresh linens and towels for room cleaning service at Tribe Suites"></div>
+          <div class="service-body">
+            <div class="top-row"><h3>Room Cleaning</h3><span class="service-price">20€ <span>/ service</span></span></div>
+            <ul><li>Fresh linens &amp; towels</li><li>Room refresh</li><li>Bathroom cleaning</li></ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-photo arch-md" id="svc2Photo"><img id="svc2Img" alt="Minibar drinks selection at Tribe Suites"></div>
+          <div class="service-body">
+            <div class="top-row"><h3>Minibar</h3></div>
+            <ul><li>Soft drinks</li><li>Water</li><li>Juices</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Discover Our Place</p>
+        <h2>Tribe Suites Gallery</h2>
+      </div>
+      <div class="gallery-grid reveal" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 style="margin-bottom:32px;">Contact Us</h2>
+        <div class="contact-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><h3>Call us</h3><a href="tel:+38349944844">049 944 844</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 7 9-7"/></svg></div>
+          <div><h3>Email us</h3><a href="mailto:tribesuites1@gmail.com">tribesuites1@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><h3>Address</h3><p>Rr. Gazmend Zajmi, Prishtinë 10000</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></div>
+          <div><h3>Instagram</h3><a href="https://www.instagram.com/tribesuites_" target="_blank" rel="noopener">@tribesuites_</a></div>
+        </div>
+        <div class="btn-row" style="margin-top:8px;">
+          <a href="https://www.airbnb.com/users/profile/1588993031989936870?previous_page_name=PdpHomeMarketplace" target="_blank" rel="noopener" class="btn btn-brass">Book Now</a>
+        </div>
+      </div>
+      <div class="map-frame reveal">
+        <iframe src="https://maps.google.com/maps?q=42.656721%2C%2021.167128&t=m&z=17&output=embed&iwloc=near" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Tribe Suites location on map"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img id="footerLogoImg" src="https://i0.wp.com/tribesuites.com/wp-content/uploads/2025/12/whiteresized-e1765899556325.png?resize=135%2C116&ssl=1" alt="Tribe Suites logo">
+      <p>Experience light luxury and thoughtful comfort at Tribe Suites, your ideal stay in Prishtina.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/tribesuites_" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+        <a href="tel:+38349944844" aria-label="Phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul><li><a href="#rooms">Rooms</a></li><li><a href="#story">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact Us</a></li></ul>
+    </div>
+    <div>
+      <h4>Reservations</h4>
+      <ul><li><a href="tel:+38349944844">049 944 844</a></li><li><a href="mailto:tribesuites1@gmail.com">tribesuites1@gmail.com</a></li><li><a href="https://www.airbnb.com/users/profile/1588993031989936870" target="_blank" rel="noopener">Book on Airbnb</a></li></ul>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright © 2026 Tribe Suites Prishtina | All Rights Reserved.</div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbCloseBtn" aria-label="Close viewer">×</button>
+  <button class="lb-nav lb-prev" id="lbPrevBtn" aria-label="Previous photo">‹</button>
+  <button class="lb-nav lb-next" id="lbNextBtn" aria-label="Next photo">›</button>
+  <div class="lb-stage">
+    <div class="lb-frame"><img id="lbImage" src="" alt=""></div>
+    <div class="lb-caption">
+      <span class="eyebrow">Tribe Suites</span>
+      <h3 id="lbTitle"></h3>
+      <p class="lb-counter" id="lbCounter"></p>
+      <div class="lb-actions" id="lbActions">
+        <a class="btn btn-brass" id="lbBook" target="_blank" rel="noopener">Book This Room</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // mobile nav
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); burger.setAttribute('aria-expanded', open); });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+  // fallback image + logo text fallback
+  const FALLBACK_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#e0d8c0"/><path d="M55 160V95a45 45 0 0 1 90 0v65" fill="none" stroke="#a52a3d" stroke-width="12"/></svg>'
+  );
+  document.querySelectorAll('#logoImg, #footerLogoImg').forEach(img => {
+    img.addEventListener('error', () => { img.closest('.brand-mark, .footer-brand').classList.add('text-fallback'); img.style.display = 'none'; });
+  });
+
+  function wireLoad(el, isImg){
+    const mark = () => { el.classList.add('loaded'); };
+    el.addEventListener('load', mark);
+    el.addEventListener('error', () => { if (isImg) el.src = FALLBACK_SVG; mark(); });
+    if (isImg && el.complete && el.naturalWidth) mark();
+  }
+
+  // reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  } else { reveals.forEach(el => el.classList.add('in')); }
+
+  // ---------- image CDN helper ----------
+  const CDN = "https://i0.wp.com/tribesuites.com/wp-content/uploads/2026/01/";
+  const u = (file, fit) => CDN + file + "?fit=" + fit + "&ssl=1";
+
+  const P101 = [u("IMG_1961.webp","683%2C1024"),u("IMG_1958.jpg","683%2C1024"),u("IMG_1962.jpg","683%2C1024"),u("IMG_1954.jpg","1000%2C667"),u("IMG_1952.jpg","1000%2C667"),u("IMG_1951.jpg","1000%2C667"),u("IMG_1955.jpg","683%2C1024"),u("IMG_1960.jpg","683%2C1024"),u("IMG_1964.webp","683%2C1024")];
+  const P102 = [u("IMG_1968.webp","1000%2C667"),u("IMG_1679.webp","768%2C1024"),u("IMG_1688.webp","768%2C1024"),u("IMG_1689.webp","768%2C1024"),u("IMG_1694.webp","768%2C1024"),u("IMG_1697.webp","768%2C1024"),u("IMG_1714.webp","768%2C1024")];
+  const P103 = [u("IMG_1966.webp","1000%2C667"),u("IMG_1702.webp","768%2C1024"),u("IMG_1709.webp","768%2C1024"),u("IMG_1701.webp","768%2C1024"),u("IMG_1707.webp","768%2C1024"),u("IMG_1710.webp","768%2C1024"),u("IMG_1712.webp","768%2C1024")];
+  const P104 = [u("IMG_1971.webp","1000%2C667"),u("IMG_1976.webp","1000%2C667"),u("IMG_1974.webp","1000%2C667"),u("IMG_1984.webp","683%2C1024"),u("IMG_1981.webp","683%2C1024"),u("IMG_1978.webp","683%2C1024"),u("IMG_1980.jpg","683%2C1024"),u("IMG_1982.webp","683%2C1024"),u("IMG_1975.webp","683%2C1024")];
+  const P301 = [u("IMG_1996.webp","1000%2C667"),u("IMG_1995.webp","1000%2C667"),u("IMG_1993.webp","1000%2C667"),u("IMG_1986.webp","683%2C1024"),u("IMG_1988.webp","683%2C1024"),u("IMG_1989.webp","683%2C1024"),u("IMG_1994.webp","1000%2C667"),u("IMG_1991.webp","1000%2C667"),u("IMG_1992.webp","1000%2C667")];
+
+  const rooms = [
+    { id:"room101", name:"Room 101", floor:"First Floor", badge:"Balcony", capacity:"1–2 Guests", price:"45€", book:"https://www.airbnb.com/rooms/1589301182725878535", desc:"First-floor apartment with a private balcony — a quiet spot for fresh air, morning coffee, or a relaxing moment after a day in the city.", photos:P101 },
+    { id:"room102", name:"Room 102", floor:"First Floor", badge:"", capacity:"1–2 Guests", price:"40€", book:"https://www.airbnb.com/rooms/1589298508614236302", desc:"A simple, comfortable first-floor stay with a cozy bedroom, fully equipped kitchen, and private bathroom — practical and calm.", photos:P102 },
+    { id:"room103", name:"Room 103", floor:"First Floor", badge:"", capacity:"1–2 Guests", price:"40€", book:"https://www.airbnb.com/rooms/1589294993501370635", desc:"A simple, comfortable first-floor stay with a cozy bedroom, fully equipped kitchen, and private bathroom — practical and calm.", photos:P103 },
+    { id:"room104", name:"Room 104", floor:"First Floor", badge:"Balcony", capacity:"1–2 Guests", price:"45€", book:"https://www.airbnb.com/rooms/1588993031246636704", desc:"First-floor apartment with a private balcony — a quiet spot for fresh air, morning coffee, or a relaxing moment after a day in the city.", photos:P104 },
+    { id:"room201", name:"Room 201", floor:"Second Floor", badge:"Balcony", capacity:"1–2 Guests", price:"45€", book:"https://www.airbnb.com/rooms/1592283932426090214", desc:"Second-floor apartment with a private balcony — an inviting outdoor corner for fresh air, morning coffee, or unwinding in the evening.", photos:P101 },
+    { id:"room202", name:"Room 202", floor:"Second Floor", badge:"", capacity:"1–2 Guests", price:"40€", book:"https://www.airbnb.com/rooms/1592286976037991415", desc:"A calm, comfortable second-floor stay with a bright, practical layout — perfect for short visits and longer stays alike.", photos:P102 },
+    { id:"room203", name:"Room 203", floor:"Second Floor", badge:"", capacity:"1–2 Guests", price:"40€", book:"https://www.airbnb.com/rooms/1592294096391406273", desc:"A calm, comfortable second-floor stay with a bright, practical layout — perfect for short visits and longer stays alike.", photos:P103 },
+    { id:"room204", name:"Room 204", floor:"Second Floor", badge:"Balcony", capacity:"1–2 Guests", price:"45€", book:"https://www.airbnb.com/rooms/1592299904659579617", desc:"Second-floor apartment with a private balcony — an inviting outdoor corner for fresh air, morning coffee, or unwinding in the evening.", photos:P104 },
+    { id:"suite301", name:"Suite 301", floor:"Top Floor", badge:"Signature", capacity:"2–3 Guests", price:"70€", book:"https://www.airbnb.com/rooms/1591529290360591890", desc:"Our signature suite — a spacious, calming retreat with a freestanding bathtub and walk-in shower. Ideal for longer stays or special occasions.", photos:P301 }
+  ];
+
+  const galleryPhotos = [
+    u("IMG_1971.webp","1000%2C667"),u("IMG_1976.webp","1000%2C667"),u("IMG_1952.jpg","1000%2C667"),u("IMG_1996.webp","1000%2C667"),
+    u("IMG_1995.webp","1000%2C667"),u("IMG_1993.webp","1000%2C667"),u("IMG_1994.webp","1000%2C667"),u("IMG_1974.webp","1000%2C667"),
+    u("IMG_1992.webp","1000%2C667"),u("IMG_1984.webp","683%2C1024"),u("IMG_1988.webp","683%2C1024"),u("IMG_1981.webp","683%2C1024"),
+    u("IMG_1978.webp","683%2C1024"),u("IMG_1961.webp","683%2C1024"),u("IMG_1980.jpg","683%2C1024"),u("IMG_1977.webp","683%2C1024"),
+    u("IMG_1982.webp","683%2C1024"),u("IMG_1702.webp","768%2C1024"),u("IMG_1707.webp","768%2C1024"),u("IMG_1709.webp","768%2C1024"),
+    u("IMG_1986.webp","683%2C1024"),u("IMG_1989.webp","683%2C1024"),u("IMG_1960.webp","683%2C1024")
+  ];
+
+  // hero + story photos
+  const heroImg = document.getElementById('heroImg'); heroImg.src = u("IMG_1993.webp","1000%2C667"); wireLoad(heroImg, true);
+  heroImg.addEventListener('load', () => document.getElementById('heroFrame').classList.add('loaded'));
+  heroImg.addEventListener('error', () => document.getElementById('heroFrame').classList.add('loaded'));
+  const storyImg = document.getElementById('storyImg'); storyImg.src = u("IMG_1959res.webp","768%2C1024"); wireLoad(storyImg, true);
+  storyImg.addEventListener('load', () => document.getElementById('storyPhoto').classList.add('loaded'));
+  storyImg.addEventListener('error', () => document.getElementById('storyPhoto').classList.add('loaded'));
+  const svc1Img = document.getElementById('svc1Img'); svc1Img.src = u("sss.webp","724%2C483"); wireLoad(svc1Img, true);
+  svc1Img.addEventListener('load', () => document.getElementById('svc1Photo').classList.add('loaded'));
+  svc1Img.addEventListener('error', () => document.getElementById('svc1Photo').classList.add('loaded'));
+  const svc2Img = document.getElementById('svc2Img'); svc2Img.src = u("sss2-1.jpg","814%2C575"); wireLoad(svc2Img, true);
+  svc2Img.addEventListener('load', () => document.getElementById('svc2Photo').classList.add('loaded'));
+  svc2Img.addEventListener('error', () => document.getElementById('svc2Photo').classList.add('loaded'));
+
+  const capIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20c1.4-4 4.2-6 7.5-6s6.1 2 7.5 6"/></svg>';
+  const zoomIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="#f8f5ec" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15 15l5 5M8 10.5h5M10.5 8v5"/></svg>';
+
+  // ---------- render rooms grouped by floor ----------
+  const floors = ["First Floor","Second Floor","Top Floor"];
+  const container = document.getElementById('roomsContainer');
+  let html = '';
+  floors.forEach(floor => {
+    const list = rooms.filter(r => r.floor === floor);
+    if (!list.length) return;
+    html += `<div class="floor-label"><h3>${floor}</h3></div><div class="room-grid">`;
+    list.forEach(r => {
+      const idx = rooms.indexOf(r);
+      html += `
+        <article class="room-card">
+          <button class="room-media" type="button" data-room="${idx}" aria-label="View photos of ${r.name}" title="View photos">
+            <span class="fill"></span>
+            <img data-src="${r.photos[0]}" alt="${r.name} at Tribe Suites, Prishtina" loading="lazy" decoding="async">
+            <span class="room-badges">${r.badge ? `<span class="badge ${r.badge==='Signature'?'brass':''}">${r.badge}</span>` : ''}</span>
+            <span class="zoom-badge">${zoomIcon}</span>
+          </button>
+          <div class="room-info">
+            <div class="top-row"><h3>${r.name}</h3><span class="room-price">${r.price}<span> / night</span></span></div>
+            <div class="room-cap">${capIcon} ${r.capacity}</div>
+            <a class="room-book" href="${r.book}" target="_blank" rel="noopener">Book on Airbnb <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </article>`;
+    });
+    html += `</div>`;
+  });
+  container.innerHTML = html;
+
+  container.querySelectorAll('button.room-media').forEach(btn => {
+    const img = btn.querySelector('img');
+    img.src = img.dataset.src;
+    wireLoad(img, true);
+    img.addEventListener('load', () => btn.classList.add('loaded'));
+    img.addEventListener('error', () => btn.classList.add('loaded'));
+    btn.addEventListener('click', () => openLightbox(rooms[parseInt(btn.dataset.room,10)].photos, 0, { title: rooms[parseInt(btn.dataset.room,10)].name, book: rooms[parseInt(btn.dataset.room,10)].book }));
+  });
+
+  // ---------- render gallery ----------
+  const galGrid = document.getElementById('galleryGrid');
+  galGrid.innerHTML = galleryPhotos.map((src, i) => `
+    <button class="gal-item" type="button" data-i="${i}" aria-label="View gallery photo ${i+1}">
+      <img data-src="${src}" alt="Tribe Suites, Prishtina — gallery photo ${i+1}" loading="lazy" decoding="async">
+    </button>`).join('');
+  galGrid.querySelectorAll('button.gal-item').forEach(btn => {
+    const img = btn.querySelector('img');
+    img.src = img.dataset.src;
+    wireLoad(img, true);
+    btn.addEventListener('click', () => openLightbox(galleryPhotos, parseInt(btn.dataset.i,10), { title: "Tribe Suites", book: null }));
+  });
+
+  // ---------- Lightbox (shared: rooms + gallery) ----------
+  const lightbox = document.getElementById('lightbox');
+  const lbImage = document.getElementById('lbImage');
+  const lbTitle = document.getElementById('lbTitle');
+  const lbCounter = document.getElementById('lbCounter');
+  const lbBook = document.getElementById('lbBook');
+  const lbActions = document.getElementById('lbActions');
+  const lbCloseBtn = document.getElementById('lbCloseBtn');
+  const lbPrevBtn = document.getElementById('lbPrevBtn');
+  const lbNextBtn = document.getElementById('lbNextBtn');
+  let currentList = [];
+  let currentIndex = 0;
+  let currentOpts = {};
+  let lastFocused = null;
+
+  function preload(i){ const list = currentList; const idx = (i + list.length) % list.length; const im = new Image(); im.src = list[idx]; }
+
+  function updateLightbox(){
+    lbImage.classList.remove('loaded');
+    lbImage.src = currentList[currentIndex];
+    lbImage.alt = (currentOpts.title || "Tribe Suites") + " — photo " + (currentIndex+1);
+    lbTitle.textContent = currentOpts.title || "Tribe Suites";
+    lbCounter.textContent = (currentIndex + 1) + ' / ' + currentList.length;
+    if (currentOpts.book) { lbBook.href = currentOpts.book; lbActions.style.display = ''; } else { lbActions.style.display = 'none'; }
+    preload(currentIndex + 1); preload(currentIndex - 1);
+  }
+  lbImage.addEventListener('load', () => lbImage.classList.add('loaded'));
+  lbImage.addEventListener('error', () => { lbImage.src = FALLBACK_SVG; lbImage.classList.add('loaded'); });
+
+  function openLightbox(list, index, opts){
+    currentList = list; currentIndex = index; currentOpts = opts || {};
+    lastFocused = document.activeElement;
+    updateLightbox();
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    lbCloseBtn.focus();
+    document.addEventListener('keydown', onLbKeydown);
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onLbKeydown);
+    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+  }
+  function showNext(){ currentIndex = (currentIndex + 1) % currentList.length; updateLightbox(); }
+  function showPrev(){ currentIndex = (currentIndex - 1 + currentList.length) % currentList.length; updateLightbox(); }
+  function onLbKeydown(e){ if (e.key==='Escape') closeLightbox(); if (e.key==='ArrowRight') showNext(); if (e.key==='ArrowLeft') showPrev(); }
+
+  lbCloseBtn.addEventListener('click', closeLightbox);
+  lbNextBtn.addEventListener('click', showNext);
+  lbPrevBtn.addEventListener('click', showPrev);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+</script>
+
+</body>
+</html>
